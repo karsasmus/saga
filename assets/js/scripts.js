@@ -114,7 +114,7 @@ if($("#main").hasClass("archive")){
         $.getScript(themeurl+"/assets/js/helper/imagesloaded.pkgd.min.js", function() {
             $("#main").imagesLoaded(function(){
                 $masonry = $('.feed').masonry({
-                    columnWidth: '.post:not(.featured)',
+                    columnWidth: '.post:not(.post-featured)',
                     itemSelector: '.post',
                     gutter: 20
                 });
