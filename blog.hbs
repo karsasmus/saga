@@ -1,7 +1,7 @@
 {{!-- The tag below includes the header - partials/header.hbs --}}
 {{> header}}
 
-<header id="header">
+<header id="header" class="animated fadeIn"{{#if @settings.cover}} style="background-image: url({{url @settings.cover}})"{{/if}}>
     <div class="header-background">
         <section class="blog-content animated fadeIn">
             <a id="site-url" class="blog-title" href="{{url}}" data-theme-url="{{theme_url}}">{{@settings.title}}</a>
